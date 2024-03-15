@@ -1,0 +1,48 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.collection hr {
+  width: 200px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #252525;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.collection h1 {
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 100px;
+}
+
+.grid-collection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.btn-explore{
+  margin-top: 50px;
+  width: 200px;
+  padding: 15px;
+  border-radius: 80px;
+  background-color: white;
+  transition: all 0.5s ease-out;
+}
+
+.btn-explore:hover{
+scale: 1.1;
+cursor: pointer;
+}
+

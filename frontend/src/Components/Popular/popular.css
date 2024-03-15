@@ -1,0 +1,28 @@
+.popular-session {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.popular-session h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+
+.popular-session hr {
+    margin: auto;
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #252525;
+    margin-bottom: 40px;
+}
+
+.slick-slider div {
+    margin: 5px 0px;
+}
+
+.carousel {
+    padding-left: 10px;
+}

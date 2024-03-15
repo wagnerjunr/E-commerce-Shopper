@@ -1,0 +1,151 @@
+.product-trail{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color:#5c5c5c;
+}
+.product-trail p1:hover{
+    text-decoration: underline;
+}
+
+.product-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px 0px 150px 0px;
+    box-sizing: border-box;
+}
+
+.product-grid{
+    min-width: 550px;
+    display: grid;
+    grid:repeat(4,130px) / auto-flow 120px;
+    margin-right: 80px;
+}
+.product-avaliation{
+    margin-top: 20px;
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-infos{
+    display: flex;
+    flex-direction: column;
+}
+.product-price{
+    margin: 40px 0px 40px 0px;
+}
+.product-price p1:first-child{
+    text-decoration: line-through;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  .product-price p1:nth-child(2){
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+.product-size{
+    display: flex;
+    gap:10px;
+    list-style: none;
+    margin: 20px 0px 30px 0px;
+}
+.product-size li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#DCDCDC;
+    width: 45px;
+    height:45px;
+}
+.product-size li:hover{
+    cursor: pointer;
+    background-color: orangered;
+}
+.product-size .li-bg{
+    background-color: orangered;
+}
+
+.product-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 270px;
+}
+.product-btn:hover{
+    cursor: pointer;
+}
+.product-category{
+    text-transform: capitalize;
+}
+
+
+
+.product-comments{
+    margin-bottom: 100px;
+}
+.product-tab{
+    list-style: none;
+    display: flex;
+    font-weight: 600;
+}
+.tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    border: 1px solid rgb(0, 0, 0,0.1);
+    padding: 20px;
+    background-color: rgb(92, 92, 92,0.05);
+}
+.active{
+    background-color: white;
+}
+.product-tab li:hover{
+    cursor: pointer;
+}
+.product-active{
+    border: 1px solid rgb(0, 0, 0,0.1);
+    padding: 40px;
+    padding-bottom: 50px;
+    line-height:1.5;
+    text-align: start;
+    text-indent: 20px;
+}
+.hidden{
+    display: none;
+}
+
+
+
+
+.product-offerts{
+    text-align: center;
+    margin-bottom: 150px;
+}
+.product-offerts h1{
+    color: #171717;
+    font-size: 36px;
+    font-weight: 600;
+}
+.product-offerts hr{
+    margin: auto;
+    width: 400px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #252525;
+    margin-top: 5px;
+}
+
+

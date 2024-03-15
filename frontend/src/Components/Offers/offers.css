@@ -1,0 +1,45 @@
+.offers{
+    background-image: linear-gradient(#fae5fe,white);
+    text-align: center;
+    margin: 100px 0px 150px 0px;
+}
+.offers h1{
+    color:#454545;
+    font-size: 55px;
+    font-weight: 600;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+.subscribe{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    width: 730px;
+    height: 60px;
+    border-radius: 80px;
+    border: 1px solid #e3e3e3;
+    margin: auto;
+}
+.subscribe input{
+    width: 500px;
+    margin-left: 30px;
+    height: 50px;
+    border: none;
+    margin-left: 30ox;
+    outline: none;
+    color:#616161;
+    font-size: 16px;    
+}
+
+.subscribe button{
+    width: 210px;
+    height: 60px;
+    margin-bottom: 25px;
+    border-radius: 80px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+}

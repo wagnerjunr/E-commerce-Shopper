@@ -1,0 +1,9 @@
+.scrolltop{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+.scrolltop-icon{
+    font-size: 75px;
+    cursor: pointer;
+}

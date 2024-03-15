@@ -1,0 +1,23 @@
+.footer{
+    text-align: center;
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-contact{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.footer-contact li{
+    margin: 5px;
+}
+.contact img{
+    margin: 20px;
+}

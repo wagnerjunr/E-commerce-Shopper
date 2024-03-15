@@ -1,0 +1,26 @@
+.image img{
+ max-width: 18vw;
+}
+.product{
+  transition: all 0.5s ease-out;
+}
+.product:hover{
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.description{
+    font-size: 14px;
+    text-align: start;
+    margin-bottom: 5px;
+  }
+.price p1:first-child{
+    text-decoration: line-through;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  .price p1:nth-child(2){
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+  }
