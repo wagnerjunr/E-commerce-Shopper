@@ -12,22 +12,18 @@
     align-items: center;
     list-style: none;
     text-decoration: none;
-
 }
 .nav-user{
     display: flex;
     align-items: center;
 }
-
 .nav-log h1{
     font-size:30px;
     margin: 5px;
 }
 .nav-menu li{
     margin: 15px;
-   
 }
-
 .nav_btn{
     background-color: white;
     padding: 10px;
@@ -36,6 +32,7 @@
     border: 1px solid black;
     width: 120px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 .nav-cart-count{
     display: flex;

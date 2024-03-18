@@ -14,6 +14,12 @@
     text-align: start;
     margin-bottom: 5px;
   }
+
+  .price{
+    display: flex;
+    text-align: center;
+  }
+
 .price p1:first-child{
     text-decoration: line-through;
     font-size: 14px;

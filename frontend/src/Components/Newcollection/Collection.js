@@ -1,18 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Item from '../Item/product';
 import './collection.css'
-import data_product from '../Assets/data_popular';
 import { Link } from 'react-router-dom';
 
 
 const Collection = () => {
+
+  const [newcolletion,setNewColletion] = useState([]);
+
+  useEffect(()=>{
+    fetch('http://localhost:4000/newcolletion')
+    .then((res)=>res.json())
+    .then((data)=>setNewColletion(data));
+  },[]);
   
   return (
     <div className='collection'>
       <h1>NOVA COLEÇÃO</h1>
       <hr/>
       <div className='grid-collection'>
-        {data_product.map((product) => (
+        {newcolletion.map((product) => (
           <div className='product-collection' key={product.id}>
             <Item product={product}></Item>
           </div>

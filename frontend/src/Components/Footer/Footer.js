@@ -25,7 +25,7 @@ const Footer = () => {
 
       <div className='contact'>
        <a href='https://www.instagram.com/' target='_blank'><img src = {insta}></img></a> 
-        <a href='https://wa.me/5512981624582' target='_blank'><img src = {whats}></img></a>
+        <a href='https://wa.me/5512993234592' target='_blank'><img src = {whats}></img></a>
        <a href='https://br.pinterest.com/' target='_blank'><img src = {pintester}></img></a> 
       </div>
       <hr/>

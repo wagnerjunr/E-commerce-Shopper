@@ -1,10 +1,17 @@
-import React from 'react'
-import data_product from '../Assets/data_popular';
-import Item from '../Item/product'
+import React, { useEffect, useState } from 'react'
 import Slider from "react-slick";
+import Item from '../Item/product'
 import './popular.css'
 
 const Popular = () => {
+
+  const [popular, setPopular] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:4000/popular')
+      .then((res) => res.json())
+      .then((data) => setPopular(data));
+  }, []);
 
   var settings = {
     dots: true,
@@ -17,16 +24,15 @@ const Popular = () => {
   return (
     <div className='popular-session'>
       <h1>PRODUTOS POPULARES</h1>
-      <hr />
-
-      <Slider {...settings} >
-        {data_product.map(item =>
-          <div key={item.id} className='carousel'>
-            <Item  product={item}></Item>
-          </div>)}
-      </Slider>
-
-    </div>
+      <hr/>
+      
+        <Slider {...settings} >
+          {popular.map(item =>
+            <div key={item.id} className='carousel'>
+              <Item product={item}></Item>
+            </div>)}
+        </Slider>
+      </div>
   )
 }
 export default Popular

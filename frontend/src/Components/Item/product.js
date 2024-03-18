@@ -15,8 +15,8 @@ const product = (props) => {
             </section>
 
             <section className='price'>
-                <p1>R${props.product.old_price}</p1>
-                <p1>R${props.product.new_price}</p1>
+                <p1>R${Number(props.product.old_price).toFixed(2)}</p1>
+                <p1>R${Number(props.product.new_price).toFixed(2)}</p1>
             </section>
         </div>
     )

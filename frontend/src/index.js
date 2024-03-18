@@ -37,10 +37,6 @@ const router = createBrowserRouter([
         element: <Shop title={"Roupa Infatil"} category={"infantil"}></Shop>
       },
       {
-        path: "/acessorios",
-        element: <Shop title={"Acessórios"} category={"acessorios"}></Shop>
-      },
-      {
         path: "/calçados",
         element: <Shop title={"Calçados"} category={"calçados"}></Shop>
       },

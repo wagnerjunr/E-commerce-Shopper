@@ -5,7 +5,7 @@ export const ShopContexto = createContext();
 
 const defaultCart = ()=>{
     let cart = [];
-    for(let index = 0; index < 300 ; index++){
+    for(let index = 0; index < 100 ; index++){
         cart[index] = new cartItem(index);
     }
     return cart
@@ -37,7 +37,7 @@ export function ShopProvider(props){
             .then((res)=>res.json())
             .then((data)=>{
                 const updatedCartItems = [...cartItems];
-                for(let index = 0; index < 300 ; index++){
+                for(let index = 0; index < 100 ; index++){
                     updatedCartItems[index].quant = data[index];
                 }
                
@@ -54,6 +54,7 @@ export function ShopProvider(props){
         updatedCartItems[itemId].size = [...updatedCartItems[itemId].size,s];
 
         setCartItems(updatedCartItems);
+        
         if(localStorage.getItem('auth-token')){
             fetch('http://localhost:4000/addtocart',{
                 method:'POST',
@@ -96,7 +97,7 @@ export function ShopProvider(props){
     useEffect(()=>{
         let count = 0;
         let total = 0;
-        for(let index = 0; index < 300  ; index++){
+        for(let index = 0; index < 100; index++){
             count += cartItems[index].quant;
             if(cartItems[index].quant > 0){
                 let product = allproduct.find((product)=>product.id === cartItems[index].id)

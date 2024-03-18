@@ -26,7 +26,6 @@ export const Navbar = () => {
                 <li onClick={() => setMenu("Masculino")}><Link style={{ textDecoration: 'none', color: 'black' }} to={'/masculino'}>Masculino</Link>{menu == "Masculino" ? <hr /> : null}</li>
                 <li onClick={() => setMenu("Feminino")}><Link style={{ textDecoration: 'none', color: 'black' }} to={'/feminino'}>Feminino</Link>{menu == "Feminino" ? <hr /> : null}</li>
                 <li onClick={() => setMenu("Infantil")}><Link style={{ textDecoration: 'none', color: 'black' }} to={'/infantil'}>Infantil</Link>{menu == "Infantil" ? <hr /> : null}</li>
-                <li onClick={() => setMenu("Acessórios")}><Link style={{ textDecoration: 'none', color: 'black' }} to={'/acessorios'}>Acessórios</Link>{menu == "Acessórios" ? <hr /> : null}</li>
                 <li onClick={() => setMenu("Calçados")}><Link style={{ textDecoration: 'none', color: 'black' }} to={'/calçados'}>Calçados</Link>{menu == "Calçados" ? <hr /> : null}</li>
 
             </div>

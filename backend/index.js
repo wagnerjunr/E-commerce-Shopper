@@ -153,7 +153,7 @@ app.post('/signup',async(req,res)=>{
         return res.status(400).json({success:false,errors:"existing user found with same email adress "})
     }
     let cart = {};
-    for(let i = 0; i < 300;i++){
+    for(let i = 0; i < 100;i++){
         cart[i]=0;
     }
     const user = new Users({
@@ -211,6 +211,21 @@ const fetchUser = async(req,res,next)=>{
         }
     }
 }
+
+app.get('/newcolletion',async(req,res)=>{
+    let products = await Product.find({});
+    let newcolletion = products.filter((product) => product.category === 'feminino');
+
+    res.send(newcolletion);
+})
+
+app.get('/popular',async(req,res)=>{
+    let products = await Product.find({});
+    let popular = products.slice(1).slice(-8);
+
+    res.send(popular);
+
+})
 
 app.post('/addtocart',fetchUser,async(req,res)=>{
 
