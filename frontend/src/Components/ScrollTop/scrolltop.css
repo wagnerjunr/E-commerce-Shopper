@@ -7,3 +7,10 @@
     font-size: 75px;
     cursor: pointer;
 }
+
+@media(max-width:750px){
+    .scrolltop{
+        display: none;
+    }
+    
+ }

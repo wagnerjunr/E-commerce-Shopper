@@ -21,3 +21,20 @@
 .contact img{
     margin: 20px;
 }
+
+@media(max-width:390px){
+   .footer-contact{
+    display: flex;
+    flex-direction: column;
+   }
+}
+
+@media(max-width:250px){
+   
+    .footer-logo h1{
+        font-size: 22px;
+    }
+    .footer-logo img{
+        width: 35px;
+    }
+ }

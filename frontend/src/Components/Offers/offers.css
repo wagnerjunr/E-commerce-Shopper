@@ -43,3 +43,73 @@
     cursor: pointer;
 
 }
+
+@media(max-width:956px){
+    .subscribe{
+        width: 500px;
+    }
+    .subscribe button{
+        width: 200px;
+    }
+}
+
+@media(max-width:650px){
+    .subscribe{
+        width: 400px;
+    }
+    .subscribe button{
+        width: 200px;
+    }
+}
+
+@media(max-width:520px){
+    .subscribe{
+        width: 350px;
+    }
+    .subscribe button{
+        width: 150px;
+    }
+}
+
+@media(max-width:460px){
+    .offers h1{
+        font-size: 40px;
+    }
+    .subscribe{
+        width: 300px;
+        margin-left: 15px;
+    }
+    .subscribe button{
+        width: 100px;
+    }
+ }
+
+ @media(max-width:460px){
+    .offers h1{
+        font-size: 40px;
+    }
+    .subscribe{
+        width: 300px;
+        margin-left: 15px;
+    }
+    .subscribe button{
+        margin-left: -50px;
+        width: 100px;
+    }
+ }
+
+ @media(max-width:410px){
+    .offers h1{
+        font-size: 40px;
+    }
+    .subscribe{
+        width: 250px;
+        margin-left: 15px;
+    }
+    .subscribe button{
+        font-size: 14px;
+        margin-left: -50px;
+        width: 90px;
+    }
+ }
+ 

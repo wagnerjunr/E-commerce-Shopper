@@ -21,7 +21,7 @@ const Collection = () => {
       <div className='grid-collection'>
         {newcolletion.map((product) => (
           <div className='product-collection' key={product.id}>
-            <Item product={product}></Item>
+            <Item product={product} className = "teste"></Item>
           </div>
         ))}
       </div>

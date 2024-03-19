@@ -1,8 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom';
 import { ShopContexto } from '../Context/Allproduct';
-import Slider from "react-slick";
-import Item from '../Components/Item/product'
+import Carousel from '../Components/Carousel/Carousel';
 import './style/product.css';
 
 
@@ -10,15 +9,16 @@ import star from './style/image/star_icon.png';
 import star_dull from './style//image/star_dull_icon.png';
 import { IoIosArrowForward } from "react-icons/io";
 
+
 const Product = () => {
-  const [allproduct, cartItems, addCart] = useContext(ShopContexto);
+  const [allproduct, cartItems, addCart, , , ,popular] = useContext(ShopContexto);
   const [size, setSize] = useState('');
   const [toggleState, setToggleState] = useState("description");
 
   const { id } = useParams();
   const product = allproduct.find((e) => e.id === Number(id));
 
-
+  console.log(popular);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id])
@@ -119,17 +119,7 @@ const Product = () => {
         <h1>PRODUTOS QUE VOCÊ PODE GOSTAR</h1>
         <hr />
 
-        <Slider {...settings}>
-          {allproduct.map(item => {
-            if (item.category === product.category) {
-              return (<div key={item.id} className='carousel'>
-                <Item product={item}></Item>
-              </div>)
-
-            } else { return null }
-          }
-          )}
-        </Slider>
+        <Carousel products={popular}></Carousel>
       </div>
 
 

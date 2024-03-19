@@ -46,3 +46,17 @@ scale: 1.1;
 cursor: pointer;
 }
 
+@media(max-width:630px){
+  .grid-collection{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+  }
+}
+@media(max-width:520px){
+      .collection h1{
+        text-align: center;
+      }
+}
+
+

@@ -30,3 +30,39 @@
     font-size: 18px;
     font-weight: 600;
   }
+
+  @media(max-width:750px){
+    .price p1:first-child{
+      font-size: 12px;
+    }
+    .price p1:nth-child(2){
+      font-size: 16px;
+    }
+    .description{
+      font-size: 12px;
+    }
+  }
+
+  @media(max-width:630px){
+    .image img{
+      max-width: 200px;
+     }
+     .product:hover{
+      scale: 1.0;
+    }
+  }
+
+  @media(max-width:520px){
+    .image img{
+      max-width: 150px;
+     }
+     .description{
+      font-size: 13px;
+      text-align: start;
+    }
+  }
+  @media(max-width:395px){
+    .image img{
+      max-width: 125px;
+     }
+  }

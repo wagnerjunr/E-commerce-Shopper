@@ -1,23 +1,39 @@
-import React, { useEffect, useState } from 'react'
-import Slider from "react-slick";
-import Item from '../Item/product'
+import React, { useEffect, useState,useContext } from 'react'
+import { ShopContexto } from '../../Context/Allproduct';
+import Carousel from '../Carousel/Carousel';
 import './popular.css'
 
 const Popular = () => {
 
-  const [popular, setPopular] = useState([]);
+  const [,,,,,,popular] = useContext(ShopContexto);
 
-  useEffect(() => {
-    fetch('http://localhost:4000/popular')
-      .then((res) => res.json())
-      .then((data) => setPopular(data));
-  }, []);
+  const [slide,setSlide] = useState(4);
+
+  useEffect(()=>{
+    window.addEventListener("resize", changeHandle);
+
+    return () => {
+      window.removeEventListener("resize", changeHandle);
+    };
+  },[])
+
+  function changeHandle(){
+    if(window.innerWidth<=630){
+      setSlide(2);
+      if(window.innerWidth<=330){
+        setSlide(1);
+      }
+    }else{
+      setSlide(4);
+    }
+  }
+
 
   var settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: slide,
     slidesToScroll: 1,
   };
 
@@ -25,13 +41,8 @@ const Popular = () => {
     <div className='popular-session'>
       <h1>PRODUTOS POPULARES</h1>
       <hr/>
-      
-        <Slider {...settings} >
-          {popular.map(item =>
-            <div key={item.id} className='carousel'>
-              <Item product={item}></Item>
-            </div>)}
-        </Slider>
+      <Carousel products={popular}></Carousel>
+
       </div>
   )
 }

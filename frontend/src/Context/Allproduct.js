@@ -18,6 +18,8 @@ export function ShopProvider(props){
     const [cartItems,setCartItems] = useState(defaultCart())
     const [totalCount,setTotalCount] = useState(0);
     const [totalCart,setTotalCart] = useState(0);
+    const [popular, setPopular] = useState([]);
+
 
     useEffect(()=>{
         fetch('http://localhost:4000/allproducts')
@@ -40,11 +42,17 @@ export function ShopProvider(props){
                 for(let index = 0; index < 100 ; index++){
                     updatedCartItems[index].quant = data[index];
                 }
-               
                 setCartItems(updatedCartItems);
             });
         }
     },[])
+
+
+    useEffect(() => {
+        fetch('http://localhost:4000/popular')
+          .then((res) => res.json())
+          .then((data) => setPopular(data));
+      }, []);
 
     const addCart = (itemId,s) =>{
 
@@ -111,7 +119,7 @@ export function ShopProvider(props){
   
 
     return (
-        <ShopContexto.Provider value={[allproduct,cartItems,addCart,removeCart,totalCount,totalCart]}>
+        <ShopContexto.Provider value={[allproduct,cartItems,addCart,removeCart,totalCount,totalCart,popular]}>
                 {props.children}
         </ShopContexto.Provider>
     )
