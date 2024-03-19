@@ -15,6 +15,7 @@ export const Hero = () => {
         autoplaySpeed: 5000,
     };
 
+    
     return (
         <div className='hero-carousel'>
             <Slider {...settings} >
