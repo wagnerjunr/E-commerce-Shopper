@@ -5,9 +5,10 @@ import Item from '../Item/product'
 
 const Carousel = (props) => {
 
-    const [slide, setSlide] = useState(4);
+    const [slide, setSlide] = useState();
 
     useEffect(() => {
+        changeHandle()
         window.addEventListener("resize", changeHandle);
 
         return () => {

@@ -23,6 +23,7 @@ const Cart = () => {
     return (
         
         <div className='cart'>
+        
             <div className='cart-item infobar'>
                 <p1>Produto</p1>
                 <p1>Descrição</p1>
@@ -92,9 +93,7 @@ const Cart = () => {
                     <button className='btn-cart finish'>FINALIZAR COMPRA</button>
                    <Link to={'/'}><button className='btn-cart continue' onClick={()=>window.scrollTo(0,0)}>CONTINUAR COMPRANDO</button> </Link> 
                     </section>
-
                 </div>
-
             </div>
         </div>
     )
