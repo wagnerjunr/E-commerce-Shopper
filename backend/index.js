@@ -7,11 +7,14 @@ const multer = require("multer");
 const path = require("path");
 const cors = require("cors");
 
+require('dotenv').config();
+const mongoURI = process.env.MONGODB_URI;
+
 app.use(express.json());
 app.use(cors());
 
 // Database connection with MongoDB
-mongoose.connect("mongodb+srv://wagneraparecidojr:Renata14031997@cluster0.hqherkh.mongodb.net/e-commerce");
+mongoose.connect(mongoURI);
 
 // API Creation
 
