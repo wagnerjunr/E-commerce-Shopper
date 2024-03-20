@@ -6,7 +6,6 @@
     position: absolute;
     left: 0;
     background-color: #fae5fe;
-    
 }
 
 .login-acess{
@@ -41,4 +40,25 @@
 .login-acess p1{
 margin-top: 15px;
 color: #454545;
+}
+@media(max-width:950px){
+    .login-acess{
+        width: 45%
+    }
+}
+@media(max-width:750px){
+    .login-acess{
+        width: 55%
+    }
+}
+@media(max-width:500px){
+    .login-acess{
+        width: 65%
+    }
+}
+@media(max-width:400px){
+    .login-acess{
+        width: 75%;
+         margin-top: 60px;
+    }
 }

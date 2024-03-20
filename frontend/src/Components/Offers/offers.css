@@ -99,17 +99,11 @@
  }
 
  @media(max-width:410px){
-    .offers h1{
-        font-size: 40px;
-    }
     .subscribe{
         width: 250px;
-        margin-left: 15px;
     }
     .subscribe button{
         font-size: 14px;
-        margin-left: -50px;
-        width: 90px;
     }
  }
  

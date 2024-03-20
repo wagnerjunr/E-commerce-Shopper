@@ -24,3 +24,25 @@
     padding: 20px;
     margin-top:25px;
 }
+
+@media(max-width:950px){
+    .signup-account{
+        width: 45%
+    }
+}
+@media(max-width:750px){
+    .signup-account{
+        width: 55%
+    }
+}
+@media(max-width:500px){
+    .signup-account{
+        width: 65%
+    }
+}
+@media(max-width:400px){
+    .signup-account{
+        width: 75%;
+        margin-top: 70px;
+    }
+}

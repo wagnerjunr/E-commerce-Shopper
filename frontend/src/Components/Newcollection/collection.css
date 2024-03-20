@@ -56,7 +56,16 @@ cursor: pointer;
 @media(max-width:520px){
       .collection h1{
         text-align: center;
+        font-size: 40px;
       }
+}
+
+@media(max-width:300px){
+  .grid-collection{
+    display: grid;
+    grid-template-columns: 3fr;
+    gap: 20px;
+  }
 }
 
 
